@@ -14,8 +14,6 @@
 		114680DD2BEE22DB00F47F81 /* SampleSdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114680DC2BEE22DB00F47F81 /* SampleSdkTests.swift */; };
 		114680E72BEE22DB00F47F81 /* SampleSdkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114680E62BEE22DB00F47F81 /* SampleSdkUITests.swift */; };
 		114680E92BEE22DB00F47F81 /* SampleSdkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114680E82BEE22DB00F47F81 /* SampleSdkUITestsLaunchTests.swift */; };
-		114680FF2BEE23A300F47F81 /* Hello.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114680FB2BEE239900F47F81 /* Hello.framework */; };
-		114681002BEE23A300F47F81 /* Hello.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 114680FB2BEE239900F47F81 /* Hello.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,20 +31,6 @@
 			remoteGlobalIDString = 114680C72BEE22DA00F47F81;
 			remoteInfo = SampleSdk;
 		};
-		114680FA2BEE239900F47F81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 114680F52BEE239900F47F81 /* Hello.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 117853CE2BED0015005DA4BC;
-			remoteInfo = Hello;
-		};
-		114680FC2BEE239900F47F81 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 114680F52BEE239900F47F81 /* Hello.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 117853D82BED0015005DA4BC;
-			remoteInfo = HelloTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,7 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				114681002BEE23A300F47F81 /* Hello.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +57,6 @@
 		114680E22BEE22DB00F47F81 /* SampleSdkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleSdkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		114680E62BEE22DB00F47F81 /* SampleSdkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSdkUITests.swift; sourceTree = "<group>"; };
 		114680E82BEE22DB00F47F81 /* SampleSdkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSdkUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		114680F52BEE239900F47F81 /* Hello.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Hello.xcodeproj; path = ../Hello/Hello.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				114680FF2BEE23A300F47F81 /* Hello.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +87,6 @@
 		114680BF2BEE22DA00F47F81 = {
 			isa = PBXGroup;
 			children = (
-				114680F52BEE239900F47F81 /* Hello.xcodeproj */,
 				114680CA2BEE22DA00F47F81 /* SampleSdk */,
 				114680DB2BEE22DB00F47F81 /* SampleSdkTests */,
 				114680E52BEE22DB00F47F81 /* SampleSdkUITests */,
@@ -159,15 +139,6 @@
 				114680E82BEE22DB00F47F81 /* SampleSdkUITestsLaunchTests.swift */,
 			);
 			path = SampleSdkUITests;
-			sourceTree = "<group>";
-		};
-		114680F62BEE239900F47F81 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				114680FB2BEE239900F47F81 /* Hello.framework */,
-				114680FD2BEE239900F47F81 /* HelloTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		114680FE2BEE23A300F47F81 /* Frameworks */ = {
@@ -268,12 +239,6 @@
 			mainGroup = 114680BF2BEE22DA00F47F81;
 			productRefGroup = 114680C92BEE22DA00F47F81 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 114680F62BEE239900F47F81 /* Products */;
-					ProjectRef = 114680F52BEE239900F47F81 /* Hello.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				114680C72BEE22DA00F47F81 /* SampleSdk */,
@@ -282,23 +247,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		114680FB2BEE239900F47F81 /* Hello.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Hello.framework;
-			remoteRef = 114680FA2BEE239900F47F81 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		114680FD2BEE239900F47F81 /* HelloTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = HelloTests.xctest;
-			remoteRef = 114680FC2BEE239900F47F81 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		114680C62BEE22DA00F47F81 /* Resources */ = {
